@@ -1,0 +1,135 @@
+:root {
+            --primary-dark: #121212;
+            --primary-white: #fcfbfa;
+            --accent: #ae2022;
+            --shade: #323231;
+}
+
+body {
+    background-color: var(--primary-dark);
+    color: var(--primary-white);
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.film-grain {
+content:"";
+  background-image:url("image/filmgrain.png");
+  height: 400%;
+  width: 400%;
+  position: fixed;
+  opacity:0.03;
+animation: animateGrain 8s steps(10) infinite;
+}
+
+@keyframes animateGrain{
+  0%, 100% { transform:translate(0, 0) }
+  10%{
+    transform:translate(-5%,-10%)
+  }
+  20%{
+    transform:translate(-15%,-20%)
+  }
+  30%{
+    transform:translate(-5%,-10%)
+  }
+  40%{
+    transform:translate(-15%,-20%)
+  }
+  
+  50%{
+    transform:translate(-5%,-10%)
+  }
+  60%{
+    transform:translate(-15%,-20%)
+  }
+  70%{
+    transform:translate(-5%,-10%)
+  }
+  80%{
+    transform:translate(-15%,-20%)
+  }
+  90%{
+    transform:translate(-5%,-10%)
+  }
+  100%{
+    transform:translate(-15%,-20%)
+  }
+ 
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    border: 0.4px solid var(--shade);
+    border-radius: 40px;
+    width: calc(100vw - 80px);
+    height: calc(100vh - 80px);
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.logo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--primary-white);
+    font-size: 8rem;
+    text-align: center;
+    z-index: 10;
+}
+
+.in-text {
+    font-size: 3.2rem;
+    position: absolute;
+    bottom: -4px;
+    right: -24px;
+    
+}
+
+.in-text span#dot {
+ color: var(--accent);
+}
+
+@media (max-width: 1200px) {
+    .logo {
+        font-size: 6rem;
+    }
+    .in-text {
+        font-size: 3rem;
+        bottom: -4px;
+        right: -34px;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo {
+        font-size: 4rem;
+    }
+    .in-text {
+        font-size: 2.2rem;
+        bottom: -4px;
+        right: -28px;
+    }
+}
+
+@media (max-width: 576px) {
+    .logo {
+        font-size: 3rem;
+    }
+    .in-text {
+        font-size: 1.8rem;
+        bottom: -4px;
+        right: -24px;
+    }
+}
+        

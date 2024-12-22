@@ -16,13 +16,13 @@ body {
 }
 
 .film-grain {
-content:"";
-  background-image:url("image/filmgrain.png");
-  height: 400%;
-  width: 400%;
-  position: fixed;
-  opacity:0.03;
-animation: animateGrain 8s steps(10) infinite;
+    content:"";
+    background-image:url("image/filmgrain.png");
+    height: 400%;
+    width: 400%;
+    position: fixed;
+    opacity:0.03;
+    animation: animateGrain 8s steps(10) infinite;
 }
 
 @keyframes animateGrain{
@@ -69,7 +69,7 @@ animation: animateGrain 8s steps(10) infinite;
     border: 0.4px solid var(--shade);
     border-radius: 40px;
     width: calc(100vw - 80px);
-    height: calc(100vh - 80px);
+    min-height: calc(100vh - 80px);
     box-sizing: border-box;
     margin: 0 auto;
 }
@@ -112,6 +112,12 @@ animation: animateGrain 8s steps(10) infinite;
 }
 
 @media (max-width: 768px) {
+    .logo-container {
+        padding: 32px;
+        border-radius: 32px;
+        width: calc(100vw - 64px);
+        min-height: calc(100vh - 64px);
+    }
     .logo {
         font-size: 4rem;
     }
@@ -123,6 +129,12 @@ animation: animateGrain 8s steps(10) infinite;
 }
 
 @media (max-width: 576px) {
+    .logo-container {
+        padding: 20px;
+        border-radius: 24px;
+        width: calc(100vw - 40px);
+        min-height: calc(100vh - 40px);
+    }
     .logo {
         font-size: 3rem;
     }

@@ -1,3 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
-    console.log("Welcome to my website!");
-});
+window.onresize = function() {
+    document.body.height = window.innerHeight;
+}
+window.onresize();

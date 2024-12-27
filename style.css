@@ -70,9 +70,6 @@ body {
     border-radius: 40px;
     width: calc(100% - 80px);
     min-height: calc(100vh - 80px);
-    min-height: -moz-available;
-    min-height: -webkit-fill-available;
-    min-height: fill-available;
     box-sizing: border-box;
 }
 
@@ -135,7 +132,7 @@ body {
         margin: 20px;
         border-radius: 24px;
         width: calc(100vw - 40px);
-        min-height: calc(100dvh - 40px);
+        min-height: calc(100vh - 40px);
     }
     .logo {
         font-size: 3rem;

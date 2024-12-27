@@ -25,11 +25,11 @@ body {
 
 .film-grain {
     content:"";
-    background-image:url("image/filmgrain.png");
+    background-image:url("image/filmgrain.webp");
     height: 400%;
     width: 400%;
     position: fixed;
-    opacity:0.03;
+    opacity:0.06;
     animation: animateGrain 8s steps(10) infinite;
 }
 
@@ -81,16 +81,19 @@ body {
 }
 
 .logo {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-family: "DM Serif Text", serif;
     font-weight: 400;
     font-style: normal;
     color: var(--primary-white);
-    font-size: 8rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+}
+
+.logo h1{
+    font-size: 8rem;
     z-index: 10;
 }
 
@@ -107,7 +110,7 @@ body {
 }
 
 @media (max-width: 1200px) {
-    .logo {
+    .logo h1 {
         font-size: 6rem;
     }
     .in-text {
@@ -122,13 +125,13 @@ body {
         padding: 32px;
         border-radius: 32px;
     }
-    .logo {
+    .logo h1 {
         font-size: 4rem;
     }
     .in-text {
         font-size: 2.2rem;
         bottom: -4px;
-        right: -28px;
+        right: -26px;
     }
 }
 
@@ -137,7 +140,7 @@ body {
         padding: 16px;
         border-radius: 24px;
     }
-    .logo {
+    .logo h1 {
         font-size: 4rem;
     }
     .in-text {

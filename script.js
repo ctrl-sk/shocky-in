@@ -2,7 +2,8 @@ function setBodyHeight() {
     const viewportHeight = window.visualViewport
         ? window.visualViewport.height
         : window.innerHeight;
-    document.body.style.height = `${viewportHeight}px`;
+    const vh = viewportHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
 }
 
 setBodyHeight();

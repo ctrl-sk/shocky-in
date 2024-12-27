@@ -129,10 +129,10 @@ body {
 
 @media (max-width: 576px) {
     .logo-container {
-        padding: 20px;
+        margin: 20px;
         border-radius: 24px;
-        width: calc(100vw - 40px);
-        min-height: calc(100vh - 40px);
+        width: calc(100dvw - 40px);
+        min-height: calc(100dvh - 40px);
     }
     .logo {
         font-size: 3rem;
